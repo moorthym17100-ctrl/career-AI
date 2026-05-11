@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Opportunity Agent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="AI Multi-Agent Career Assistant - Opportunity Edge Feature">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <h1>Opportunity Agent</h1>
+            <p>Upload your resume and let our AI extract skills to match you with top job & internship opportunities.</p>
+        </header>
+
+        <section class="upload-section glass-panel">
+            <form id="resume-form">
+                <div class="file-drop-area" id="file-drop-area">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 1rem;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                    <span class="file-msg">Drag & Drop your resume (PDF or TXT)</span>
+                    <input class="file-input" type="file" id="resume" name="resume" accept=".pdf, .txt" required>
+                    <div class="file-name" id="file-name">No file chosen</div>
+                </div>
+                <button type="submit" class="primary-btn" id="submit-btn">
+                    <span>Analyze & Match Opportunities</span>
+                    <div class="loader" id="loader"></div>
+                </button>
+            </form>
+            <div id="error-message" class="error-msg hidden"></div>
+        </section>
+
+        <section id="results-section" class="results-section hidden">
+            <!-- Skills Summary -->
+            <div class="skills-panel glass-panel">
+                <h2>Extracted Skills</h2>
+                <div id="skills-container" class="skills-container"></div>
+            </div>
+
+            <!-- Opportunities Table -->
+            <div class="opportunities-panel glass-panel">
+                <h2>Matched Opportunities</h2>
+                <div class="table-responsive">
+                    <table id="opportunities-table">
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Role</th>
+                                <th>Type</th>
+                                <th>Match Score</th>
+                                <th>Required Skills</th>
+                            </tr>
+                        </thead>
+                        <tbody id="opportunities-body">
+                            <!-- Rows dynamitcally generated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

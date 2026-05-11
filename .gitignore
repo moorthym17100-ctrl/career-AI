@@ -1,0 +1,101 @@
+# =====================
+# Node.js / React (front end & back end)
+# =====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.npm
+.eslintcache
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# =====================
+# Environment Variables
+# =====================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# =====================
+# Python / Flask (flask-opportunity-agent)
+# =====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# Python packaging
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+coverage.xml
+
+# =====================
+# Uploaded / Generated Files
+# =====================
+uploads/
+generated/
+*.pdf
+*.docx
+temp/
+tmp/
+
+# =====================
+# Logs
+# =====================
+logs/
+*.log
+*.log.*
+
+# =====================
+# OS & Editor
+# =====================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/settings.json
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# =====================
+# Test files
+# =====================
+test_*.txt
+test_*.js
+test_*.py
